@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>AI Assistant Map</title>
+
+    <!-- Leaflet -->
+    <link rel="stylesheet"
+    href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+    <!-- Your CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+
+<!-- =========================
+     TOP SEARCH BAR
+========================= -->
+<div id="topbar">
+
+    <input
+        type="text"
+        id="searchBox"
+        placeholder="Search location..."
+    >
+
+    <button onclick="searchPlace()">
+        Search
+    </button>
+
+</div>
+
+
+
+<!-- =========================
+     RIGHT INFO PANEL
+========================= -->
+<div id="infoPanel">
+
+    <h2>Navigation Panel</h2>
+
+    <p id="distance">
+        Distance: --
+    </p>
+
+    <p id="locationName">
+        Location: --
+    </p>
+
+    <p id="weatherInfo">
+        Weather: --
+    </p>
+
+</div>
+
+
+
+<!-- =========================
+     MAP CONTAINER
+========================= -->
+<div id="map"></div>
+
+
+
+<!-- =========================
+     YOUR JS FILE
+========================= -->
+<script src="script.js"></script>
+
+
+
+</body>
+</html>
